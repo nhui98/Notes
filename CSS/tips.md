@@ -1,19 +1,10 @@
 # height 100% issue
 - positioned ancestor / html, body needs height defined
 
-# margin: auto
-- centres elements for block level elements with an explicitly assigned width
-# margin-inline
-- only effects left and right
-
 # breaking out of parent container
 width: 100vw
 margin-inline-start: 50%
 transform: translate(-50%)
-
-# Scrolling
-scroll-behaviour: smooth;
-scroll-padding-top
 
 *fixed navigation covering content*
 - use a custom property value for scroll-padding-top
@@ -32,16 +23,19 @@ border-top-left-radius: value1 value2
   - non hoverable devices should just show the hovered state
 }
 
-# Scroll-linked Animation
-@scroll-timeline timelineName {
-  - define where the scroll tracking starts and end
+# console log for css
+* {
+  - set an outline for all elements
+  - set a bg for all elements
 }
 
-- create an animation that links with the scrolling
-- set: animation: animationName 1s linear both
-- set: animation-timeline: timelineName
+# Remove specificity
+:where(selector) {} //strips the specificity of this selector
 
-(or use js with polyfill)
-import "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"
+# Fixing overlapping elements, each with its own shadow
+filter: drop-shadow()
+- apply on parent element 
 
-
+# Backdrop for <dialog>
+::backdrop {}
+- to open dialog listen for click event and use .showModal() .close()

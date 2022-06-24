@@ -25,3 +25,7 @@
 
 *Pseudo Element*
 ::before ::after
+
+# Select range of content
+:nth-of-child(n+3):nth-of-child(-n+5)
+- gets the 3rd to 5th items

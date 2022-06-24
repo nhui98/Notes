@@ -38,3 +38,7 @@ none left right
 *opacity*
 
 *vertical-align*
+
+# display: contents
+- removes the boxes, causing child elements to behave as if these parents dont exist
+- removing the boxes means some styles (e.g. bg) cant be applied to the child elements

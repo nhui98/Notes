@@ -13,4 +13,7 @@ text-decoration shadow
 
 *Colors*
 rgb(a) hex hsl(a)
+- try use hsl() more
 
+# Simple Color Scheme
+Black + White + Grey + 1 pop color
